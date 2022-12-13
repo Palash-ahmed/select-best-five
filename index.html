@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@2.24.0/dist/full.css" rel="stylesheet" type="text/css" />
+
+
+</head>
+
+<body>
+
+    <section class="w-11/12 mx-auto mt-12">
+        <div class="grid grid-cols-2 gap-4">
+
+            <div class="grid grid-cols-3 gap-4">
+                
+                 <!-- player 1 -->
+                <div class="card w-full bg-base-100 shadow-xl">
+                    <figure class=" ">
+                        <img src="images/kaka.jpg" class="w-full h-40" alt="kaka"
+                            class="rounded-xl" />
+                    </figure>
+                    <div class="card-body items-center text-center">
+                        <h2 class="card-title">Richardo kaka</h2>
+
+                        <div class="card-actions">
+                            <button class="btn btn-primary" onclick="addPlayer(this)">SELECT</button>
+                        </div>
+                    </div>
+                </div>
+                    <!-- Player 2 -->
+                <div class="card w-full bg-base-100 shadow-xl">
+                    <figure class=" ">
+                        <img src="images/naymer-brazil.jpg" class="w-full h-40" alt="Neymar"
+                            class="rounded-xl" />
+                    </figure>
+                    <div class="card-body items-center text-center">
+                        <h2 class="card-title">Neymar Jr</h2>
+
+                        <div class="card-actions">
+                            <button class="btn btn-primary" onclick="addPlayer(this)">SELECT</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- player 3  -->
+                <div class="card w-full bg-base-100 shadow-xl">
+                    <figure class=" ">
+                        <img src="images/ozil.jpg" class="w-full h-40" alt="ozil"
+                            class="rounded-xl" />
+                    </figure>
+                    <div class="card-body items-center text-center">
+                        <h2 class="card-title">Mesut Ozil</h2>
+
+                        <div class="card-actions">
+                            <button class="btn btn-primary"onclick="addPlayer(this)">SELECT</button>
+                        </div>
+                    </div>
+                </div>
+                 <!-- Player 4 -->
+                <div class="card w-full bg-base-100 shadow-xl">
+                    <figure class=" ">
+                        <img src="images/ronaldinho.jpg" class="w-full h-40" alt="ronaldinho"
+                            class="rounded-xl" />
+                    </figure>
+                    <div class="card-body items-center text-center">
+                        <h2 class="card-title">ronaldinho</h2>
+
+                        <div class="card-actions">
+                            <button class="btn btn-primary" onclick="addPlayer(this)">SELECT</button>
+                        </div>
+                    </div>
+                </div>
+
+                  <!-- player 5  -->
+                <div class="card w-full bg-base-100 shadow-xl">
+                    <figure class=" ">
+                        <img src="images/Ronaldo-Brazil.jpeg" class="w-full h-40" alt="Ronaldo"
+                            class="rounded-xl" />
+                    </figure>
+                    <div class="card-body items-center text-center">
+                        <h2 class="card-title">Ronaldo</h2>
+
+                        <div class="card-actions">
+                            <button class="btn btn-primary" onclick="addPlayer(this)">Buy Now</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Player 6 -->
+                <div class="card w-full bg-base-100 shadow-xl">
+                    <figure class=" ">
+                        <img src="images/ronaldo.jpg" class="w-full h-40" alt="cr. ronaldo" class="rounded-xl" />
+                    </figure>
+                    <div class="card-body items-center text-center">
+                        <h2 class="card-title">Cristiano Ronaldo</h2>
+                       
+                        <div class="card-actions">
+                            <button class="btn btn-primary" onclick="addPlayer(this)">Buy Now</button>
+                        </div>
+                    </div>
+                </div>
+
+
+
+            </div>
+            <!-- ... -->
+            <div>
+                <h1 class="text-5xl text-center">Selected - V</h1>
+                <span class="text-blue-500" id="total-added-product">0</span>
+                <!-- table -->
+                <div class="overflow-x-auto">
+                    <table class="table w-full">
+                        <!-- head -->
+
+                        <tbody id="carts-products">
+                          <!-- row 1 -->
+                            <!-- <tr>
+                                <th>1</th>
+                                <td>Cy Ganderton</td>
+                                
+                            </tr> -->
+
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </section>
+     <script src="js/player.js"></script>
+</body>
+
+</html>
